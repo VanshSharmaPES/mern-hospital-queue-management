@@ -83,7 +83,9 @@ cd scalable-opd-queue
 npm install
 // Configure Environment Variables
 // Create a .env.local file in the root directory and add your MongoDB connection string:
+```
 
+```Bash
 npm run dev
 // Access the Application
 // Open http://localhost:3000 in your browser.
