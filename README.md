@@ -78,20 +78,15 @@ git clone [https://github.com/yourusername/scalable-opd-queue.git](https://githu
 cd scalable-opd-queue
 Install dependencies
 
-Bash
+```Bash
 npm install
-Configure Environment Variables
-Create a .env.local file in the root directory and add your MongoDB connection string:
+// Configure Environment Variables
+// Create a .env.local file in the root directory and add your MongoDB connection string:
 
-Code snippet
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/hospital-queue
-Run the development server
-
-Bash
 npm run dev
-Access the Application
-Open http://localhost:3000 in your browser.
-
+// Access the Application
+// Open http://localhost:3000 in your browser.
+```
 ## 🔬 Scientific Contribution: The Singleton Pattern
 A key contribution of this architecture is the implementation of the Singleton Connection Pattern in src/lib/dbConnect.ts. This solves the "Connection Storm" issue common in serverless environments.
 
