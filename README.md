@@ -62,10 +62,10 @@ As detailed in the accompanying research paper, the system was stress-tested to 
 ├── public             # Static assets
 └── package.json       # Project dependencies
 ```
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 Follow these steps to run the research prototype locally.
 
-Prerequisites
+### Prerequisites
 Node.js (v18 or higher)
 
 MongoDB URI (Local instance or MongoDB Atlas)
@@ -92,7 +92,7 @@ npm run dev
 Access the Application
 Open http://localhost:3000 in your browser.
 
-🔬 Scientific Contribution: The Singleton Pattern
+## 🔬 Scientific Contribution: The Singleton Pattern
 A key contribution of this architecture is the implementation of the Singleton Connection Pattern in src/lib/dbConnect.ts. This solves the "Connection Storm" issue common in serverless environments.
 
 TypeScript
@@ -104,12 +104,12 @@ if (!cached.promise) {
 }
 This ensures that despite thousands of incoming requests, the application reuses existing database connections, significantly reducing overhead and latency.
 
-🔮 Future Scope
+## 🔮 Future Scope
 Containerization: Implementation of Docker & Kubernetes for horizontal scaling across multiple nodes.
 
 AI Integration: Machine Learning models (LSTM) to predict wait times based on historical footfall data.
 
 IoT Support: Integration with digital signage screens in hospital waiting halls for patients without smartphones.
 
-📜 License
+## 📜 License
 This project is open-source and available under the MIT License.
