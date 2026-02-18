@@ -66,17 +66,18 @@ As detailed in the accompanying research paper, the system was stress-tested to 
 Follow these steps to run the research prototype locally.
 
 ### Prerequisites
-Node.js (v18 or higher)
+* Node.js (v18 or higher)
 
-MongoDB URI (Local instance or MongoDB Atlas)
+* MongoDB URI (Local instance or MongoDB Atlas)
 
-Steps
-Clone the repository
+### Steps
+* Clone the repository
 
-Bash
+```Bash
 git clone [https://github.com/yourusername/scalable-opd-queue.git](https://github.com/yourusername/scalable-opd-queue.git)
 cd scalable-opd-queue
-Install dependencies
+// Install dependencies
+```
 
 ```Bash
 npm install
