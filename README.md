@@ -55,6 +55,8 @@ As detailed in the research paper, the system was stress-tested to simulate "OPD
 │   └── types          # TypeScript interfaces
 ├── public             # Static assets
 └── package.json       # Dependencies & Scripts
+```
+
 ⚙️ Installation & Setup
 Prerequisites
 Node.js (v18 or higher)
