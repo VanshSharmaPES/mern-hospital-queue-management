@@ -96,12 +96,14 @@ Open http://localhost:3000 in your browser.
 A key contribution of this architecture is the implementation of the Singleton Connection Pattern in src/lib/dbConnect.ts. This solves the "Connection Storm" issue common in serverless environments.
 
 TypeScript
+```bash
 // src/lib/dbConnect.ts
 if (!cached.promise) {
   cached.promise = mongoose.connect(MONGODB_URI).then((mongoose) => {
     return mongoose;
   });
 }
+```
 This ensures that despite thousands of incoming requests, the application reuses existing database connections, significantly reducing overhead and latency.
 
 ## 🔮 Future Scope
