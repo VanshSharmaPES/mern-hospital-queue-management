@@ -82,7 +82,7 @@ cd scalable-opd-queue
 ```Bash
 npm install
 // Configure Environment Variables
-// Create a .env.local file in the root directory and add your MongoDB connection string:
+// Create a .env.local file in the root directory and add your MongoDB connection string
 ```
 
 ```Bash
